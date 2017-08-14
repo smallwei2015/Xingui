@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mall_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.blue.xingui.activity.MallDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mall_detail_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            style="@style/normal_icon_style"
+            android:id="@+id/left"
+            android:layout_marginLeft="@dimen/dp5"
+            android:src="@mipmap/arrow_left"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/circle_bg_tra"
+            android:onClick="btn_back"/>
+
+        <ImageView
+            style="@style/normal_icon_style"
+            android:id="@+id/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/dp5"
+            android:src="@mipmap/qq_white"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/circle_bg_tra"
+            android:onClick="btn_qq"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pay_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pay"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="结算"
+            android:textSize="@dimen/sp16" />
+
+        <TextView
+            android:id="@+id/add_goods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tb"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="加入购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+    </LinearLayout>
+
+</LinearLayout>

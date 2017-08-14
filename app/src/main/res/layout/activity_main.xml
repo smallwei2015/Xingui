@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.blue.xingui.MainActivity">
+
+    <include layout="@layout/top" />
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp340"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:columnCount="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/main_img"
+                android:id="@+id/news"
+                android:onClick="btn_news"
+                android:src="@mipmap/news" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="新闻"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/main_img"
+                android:id="@+id/mall"
+                android:onClick="btn_mall"
+                android:src="@mipmap/mall" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="商城"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/main_img"
+                android:id="@+id/nearby"
+                android:onClick="btn_map"
+                android:src="@mipmap/near" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="附近"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:gravity="center">
+
+            <ImageView
+                style="@style/main_img"
+                android:id="@+id/join"
+                android:onClick="btn_mine"
+                android:src="@mipmap/mine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="我的"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eee</color>
+    <color name="colorPrimaryDark">#F4F4F4</color>
+    <color name="colorAccent">#D81E06</color>
+
+    <color name="primaryColorPressed">#8b1304</color>
+
+    <color name="primaryColor">#D81E06</color>
+    <color name="colorPrimaryTra">#665bb7f4</color>
+
+    <color name="orange">#FF9731</color>
+
+
+
+    <color name="divider_gray">#9eee</color>
+    <color name="white">#ffff</color>
+    <color name="transparent">#0fff</color>
+    <color name="darkGray">#333</color>
+    <color name="middleGray">#666</color>
+    <color name="lightGray">#999</color>
+    <color name="xlightGray">#aaa</color>
+    <color name="xxligthGray">#ddd</color>
+    <color name="xdarkGray">#111</color>
+    <color name="black">#000</color>
+    <color name="login_bg_color">#F4F4F4</color>
+    <color name="light_gray" >@color/lightGray</color>
+    <color name="dark_gray">@color/darkGray</color>
+    <color name="news_selected_color">#3FC04F</color>
+    <color name="middle_gray" >@color/middleGray</color>
+    <color name="xxxlight_gray">#ccc</color>
+    <color name="xlight_gray">@color/xlightGray</color>
+    <color name="xxlight_gray">#aaa</color>
+    <color name="price_red">#CD4847</color>
+
+
+    <color name="bg_color">#F4F4F4</color>
+    <color name="bg_color_light">#edecec</color>
+    <color name="money">#F9B050</color>
+    <color name="tag_normal" >#27CDC0</color>
+    <color name="tag_out">#9eee</color>
+</resources>

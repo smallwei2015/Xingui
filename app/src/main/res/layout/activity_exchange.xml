@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exchange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blue.xingui.activity.ExchangeActivity"
+    android:background="@color/bg_color">
+
+    <include layout="@layout/top"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/dark_gray"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:text="账号："
+        android:id="@+id/user"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:background="@color/white"
+        android:hint="输入16位兑换码"
+        android:textSize="@dimen/sp16"
+        android:textColorHint="@color/xlight_gray"
+        android:textColor="@color/middle_gray"
+        android:id="@+id/number"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp15"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:textColor="@color/middle_gray"
+        android:text="兑换码由16位字母及阿拉伯数字组成，字母区分大小写，输入完成后点击兑换。"/>
+
+
+    <TextView
+        style="@style/login_btn"
+        android:text="兑换"
+        android:onClick="btn_exchange"
+        />
+
+</LinearLayout>

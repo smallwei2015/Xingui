@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_supply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.blue.xingui.activity.SupplyActivity"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp16"
+        android:text="天锡大酒店"
+        android:gravity="center"
+        android:textColor="@color/price_red"
+        android:id="@+id/supply_name"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dp1">
+        <TextView
+            style="@style/supply_text"
+            android:text="加酒时间:"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:id="@+id/supply_date"
+            android:textSize="@dimen/sp14"
+            android:gravity="center_vertical"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dp1">
+        <TextView
+            style="@style/supply_text"
+            android:text="目标酒量:"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:textSize="@dimen/sp14"
+            android:inputType="number"
+            android:id="@+id/supply_number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white"/>
+    <TextView
+        style="@style/supply_text"
+        android:text="附加说明(选填)"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp14"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:id="@+id/supply_tips"
+        android:hint="请输入相关说明"
+        android:textColorHint="@color/light_gray"
+        android:background="@color/bg_color_light"
+        />
+
+
+
+    <TextView
+        style="@style/supply_text"
+        android:background="@color/bg_color"
+        android:id="@+id/supply_capacity"
+        android:text="当前酒量：100L/200L"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fill_recomend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blue.xingui.activity.FillRecomendActivity">
+
+
+    <include layout="@layout/top"/>
+
+    <EditText
+        android:background="@drawable/edit_double_line_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_marginBottom="@dimen/dp40"
+        android:id="@+id/code"/>
+
+
+
+    <TextView
+        style="@style/login_btn"
+        android:text="确定"
+        android:layout_marginTop="@dimen/dp40"
+        android:onClick="btn_sure"/>
+
+</LinearLayout>

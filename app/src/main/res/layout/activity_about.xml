@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        style="@style/normal_icon_style"
+        android:layout_margin="@dimen/dp5"
+        android:id="@+id/about_back"
+        android:src="@mipmap/left_gray"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo"/>
+
+        <TextView
+            style="@style/about_text_style"
+            android:id="@+id/about_version"
+            android:text="版本"/>
+
+        <TextView
+            style="@style/about_text_style"
+            android:text="@string/app_name"/>
+
+        <TextView
+            style="@style/about_text_style"
+            android:text="北京蓝太平洋科技股份有限公司"/>
+    </LinearLayout>
+
+
+</FrameLayout>

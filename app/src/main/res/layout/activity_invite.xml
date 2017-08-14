@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.blue.xingui.activity.InviteActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/invite_bg"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:padding="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/tips"
+        android:onClick="btn_tips" />
+
+    <ImageView
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:padding="@dimen/dp5"
+        android:layout_marginTop="@dimen/dp10"
+        android:src="@mipmap/left_gray"
+        android:onClick="btn_back"/>
+
+    <TextView
+        android:layout_width="@dimen/dp100"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:gravity="center"
+        android:textSize="@dimen/sp16"
+        android:layout_marginBottom="@dimen/dp100"
+        android:text="邀请好友"
+        android:background="@drawable/invite_btn_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btn_invite"/>
+</RelativeLayout>

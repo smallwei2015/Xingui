@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/white"
+        android:text="1、活动时间：长期有效。\n\n2、用户成功登录后分享此页面，每成功邀请一位好友注册下载APP可立得邀请礼包，邀请的好友越多获得的礼包就越多。\n\n3、优惠礼包在线上活啤购买、到店购买中均可作抵现使用。\n\n4、优惠券自领取之日起30日内有效。\n\n5、获得的邀请礼包将和用户注册时填写的手机号绑定，不和收货地址填写的手机号绑定，若手机号不再使用，请您及时修改重新绑定。\n\n6、此活动最终解释权归“山东新贵科技股份有限公司”"/>
+
+</LinearLayout>

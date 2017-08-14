@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="small_t_size" format="dimension|reference"/>
+    <attr name="middle_t_size" format="reference|dimension"/>
+    <attr name="large_t_size" format="reference|dimension"/>
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="tabBackgrounds" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="PtrFrameLayout">
+        <!-- resistence, when pulling -->
+        <attr name="ptr_resistence" format="float"/>
+
+        <attr name="ptr_ratio_of_header_height_to_refresh" format="float"/>
+
+        <attr name="ptr_duration_to_close" format="integer"/>
+        <attr name="ptr_duration_to_close_header" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="PtrClassicDefaultHeader">
+        <attr name="ptr_rotate_ani_time" format="integer"/>
+    </declare-styleable>
+
+</resources>

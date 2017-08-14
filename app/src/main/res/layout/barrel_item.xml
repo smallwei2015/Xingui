@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        style="@style/barrel_linear_style_top"
+        android:background="@color/white"
+        android:id="@+id/barrel_title">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒桶编号："
+            android:textColor="@color/lightGray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="afafasfsadfas"
+            android:id="@+id/barrel_number"
+            android:textColor="@color/lightGray" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:id="@+id/barrel_state"
+            android:src="@mipmap/address" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/hotel" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="酒店名称：" />
+
+        <TextView
+            android:id="@+id/hotel_name"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/hotel_address" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="酒店地址：" />
+
+        <TextView
+            android:id="@+id/hotel_address"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/hotel_phone" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="酒店电话：" />
+
+        <TextView
+            android:id="@+id/hotel_phone"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/capacity" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="当前酒量：" />
+
+        <TextView
+            android:id="@+id/capacity"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/bartender" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="酒师姓名：" />
+
+        <TextView
+            android:id="@+id/bartender_name"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/barrel_linear_style">
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp5"
+            android:src="@mipmap/hotel_phone" />
+
+        <TextView
+            style="@style/order_black_text"
+            android:text="酒师电话：" />
+
+        <TextView
+            android:id="@+id/bartender_phone"
+            style="@style/order_black_text"
+            android:layout_weight="1"
+            android:text="酒店名称：" />
+
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

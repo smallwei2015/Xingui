@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">活啤</string>
+
+
+    <string name="hebut_ptr_pull_down">下拉</string>
+    <string name="hebut_ptr_release_to_refresh">松开刷新</string>
+    <string name="hebut_ptr_updating">刷新中...</string>
+    <string name="hebut_ptr_update_complete">刷新成功</string>
+    <string name="hebut_ptr_last_update">上次刷新:&#160;</string>
+    <string name="hebut_ptr_seconds_ago">&#160;秒之前</string>
+    <string name="hebut_ptr_minutes_ago">&#160;分钟之前</string>
+    <string name="hebut_ptr_hours_ago">&#160;小时之前</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inner">test</string>
+</resources>

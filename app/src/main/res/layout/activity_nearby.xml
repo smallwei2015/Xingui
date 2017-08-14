@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_nearby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blue.xingui.activity.NearbyActivity">
+
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp16"
+        android:text="当前位置："
+        android:background="#9eee"
+        android:id="@+id/pos"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp40"
+        android:padding="@dimen/dp5"
+        android:src="@drawable/c_pos"
+        android:layout_alignParentBottom="true"
+        android:onClick="btn_cpos"
+        android:layout_marginBottom="@dimen/dp20"/>
+</RelativeLayout>

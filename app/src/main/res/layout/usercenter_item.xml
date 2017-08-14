@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp5"
+    android:background="@drawable/all_btn_bg"
+    android:layout_marginBottom="@dimen/dp1">
+
+    <ImageView
+        android:layout_width="@dimen/dp35"
+        android:layout_height="@dimen/dp35"
+        android:padding="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp5"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img"/>
+
+    <TextView
+        style="@style/mine_item_style"
+        android:id="@+id/text"
+        android:layout_marginBottom="@dimen/dp1"
+        android:layout_gravity="center_vertical"
+        android:text="this is text"
+        />
+
+
+</LinearLayout>

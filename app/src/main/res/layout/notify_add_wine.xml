@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_radio_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/barrel_linear_style_top"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒桶编号："
+            android:textColor="@color/lightGray" />
+
+        <TextView
+            android:id="@+id/barrel_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="afafasfsadfas"
+            android:textColor="@color/lightGray" />
+
+        <ImageView
+            android:id="@+id/barrel_state"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:src="@mipmap/light_red" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="@dimen/dp10"
+        android:singleLine="true"
+        android:id="@+id/wine_number"
+        android:textSize="@dimen/sp16"
+        android:inputType="number"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="当前酒量为"
+        android:id="@+id/wine_tips"
+        android:textColor="@color/xlight_gray"
+        android:textSize="@dimen/sp12" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            style="@style/small_btn"
+            android:text="确定"
+            android:id="@+id/sure"/>
+    </LinearLayout>
+
+
+</LinearLayout>

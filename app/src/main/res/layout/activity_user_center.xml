@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.blue.xingui.activity.UserCenterActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/demo_bg" />
+
+
+
+        <ImageView
+            style="@style/normal_icon_style"
+            android:layout_margin="@dimen/dp5"
+            android:src="@mipmap/arrow_left"
+            android:onClick="btn_back"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp5"
+            android:padding="@dimen/dp5"
+            android:src="@mipmap/setting"
+            android:layout_alignParentRight="true"
+            android:onClick="btn_setting"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:translationY="@dimen/dp40p"
+        android:layout_marginBottom="@dimen/dp20p">
+
+        <ImageView
+            android:layout_width="@dimen/dp82"
+            android:layout_height="@dimen/dp82"
+            android:background="@drawable/bg_circle_white"/>
+        <ImageView
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:src="@drawable/circle_gray"
+            android:layout_gravity="center"
+            android:id="@+id/usercenter_icon"
+            android:transitionName="usericon"/>
+    </FrameLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usercenter_rec">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:background="@drawable/all_btn_bg"
+        android:clickable="true"
+        android:onClick="btn_setting"
+        android:layout_marginTop="@dimen/dp20"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp35"
+            android:padding="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:src="@mipmap/setting_icon"
+            android:id="@+id/img"/>
+
+        <TextView
+            style="@style/mine_item_style"
+            android:id="@+id/text"
+            android:layout_marginBottom="@dimen/dp1"
+            android:layout_gravity="center_vertical"
+            android:text="设置"
+            />
+
+
+    </LinearLayout>
+    <TextView
+        style="@style/big_tb_style"
+        android:onClick="btn_loginOut"
+        android:visibility="gone"
+        android:text="退出登录" />
+
+</LinearLayout>

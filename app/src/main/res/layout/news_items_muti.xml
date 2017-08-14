@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="this is title"
+        android:id="@+id/news_muti_title"
+        android:padding="@dimen/middle_padding"
+        android:textSize="@dimen/middle_text"/>
+
+    <com.blue.redstone.view.NoScrollGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/middle_padding"
+        android:id="@+id/news_muti_grid"/>
+</LinearLayout>

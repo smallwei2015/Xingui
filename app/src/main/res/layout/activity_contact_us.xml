@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F5F6"
+        android:scaleType="fitCenter"
+        android:src="@drawable/contact_us" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/middle_padding"
+        android:text="请填写联系信息，我们将在一个工作日内给您反馈"
+        android:textColor="@color/middle_gray"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_padding"
+        android:padding="@dimen/middle_padding"
+        android:background="@drawable/contact_us">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/middle_padding"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/middle_text"
+            android:layout_gravity="center_vertical"
+            android:hint="您的称呼"
+            android:textColorHint="@color/light_gray"
+            android:background="@color/transparent"
+            android:id="@+id/contact_name"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_padding"
+        android:padding="@dimen/middle_padding"
+        android:background="@drawable/contact_us">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/middle_padding"
+            android:src="@mipmap/phone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/middle_text"
+            android:layout_gravity="center_vertical"
+            android:hint="您的联系方式"
+            android:textColorHint="@color/light_gray"
+            android:background="@color/transparent"
+            android:id="@+id/contact_phone"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_padding"
+        android:padding="@dimen/middle_padding"
+        android:background="@drawable/contact_us">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/middle_padding"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_gray"
+            android:textSize="@dimen/middle_text"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/small_padding"
+            android:lines="5"
+            android:id="@+id/contact_content"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:textColorHint="@color/light_gray"
+            android:hint="请输入您的问题，建议或意见"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/middle_padding"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:id="@+id/contact_commit"
+        android:background="@drawable/bg_circle_white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/xxlight_gray"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/contact_info"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/xxlight_gray"
+        android:id="@+id/contact_info2"
+        />
+
+</LinearLayout>
